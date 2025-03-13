@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #172554, #0f172a);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s infinite ease-in-out;
+    color: white;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glowing Effect */
+.glow-text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Button Hover Effects */
+.btn-glow {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Navbar Link Hover Animation */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #38bdf8;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Floating Particles Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    body {
+        background-size: 400% 400%;
+    }
+}
+
+
+
+
