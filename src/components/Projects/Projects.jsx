@@ -23,6 +23,20 @@ const projects = [
     image: "./assets/weather.jpg",
     link: "https://github.com/praveen-dev05",
   },
+  {
+    title: "Rental System",
+    description:
+      "Built a full-stack rental system using Spring Boot, Java, JPA, and React.js with JWT-based authentication and role-based access control. Integrated secure RESTful APIs, dynamic CORS configuration, and persistent session handling using React Context API and LocalStorage. Designed a responsive UI with protected routes, tested APIs using Postman, and ensured modular, scalable architecture across backend and frontend",
+    image: "./assets/rentalsystem.jpg",
+    link: "https://github.com/praveen-dev05",
+  },
+  {
+    title: "E-commerce",
+    description:
+      "Built a full-stack E-commerce application using Spring Boot (Java) for the backend and React.js for the frontend. The project features product listing, add-to-cart functionality, user session validation, and dynamic UI components. Integrated secure REST APIs, structured DTOs, and MySQL with JPA for real-time data persistence. Designed a clean, responsive UI with alert feedback and efficient frontend-backend communication to ensure seamless shopping experience",
+    image: "./assets/ecommerce.jpg",
+    link: "https://github.com/praveen-dev05",
+  },
 ];
 
 const Projects = () => {
